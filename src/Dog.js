@@ -14,6 +14,7 @@ const Dog = ({ dogs }) => {
 		<div className="Dog">
 			<h1>{dog.name}</h1>
 			<h4>Age: {dog.age}</h4>
+			<img src={dog.src} />
 			<ul>{dog.facts.map((fact) => <li key={uuid()}>{fact}</li>)}</ul>
 		</div>
 	);

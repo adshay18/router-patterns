@@ -2,6 +2,10 @@ import './App.css';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import Nav from './Nav';
 import Dog from './Dog';
+import whiskey from './images/whiskey.jpg';
+import tubby from './images/tubby.jpg';
+import duke from './images/duke.jpg';
+import perry from './images/perry.jpg';
 
 function App({ dogs }) {
 	const names = [];
@@ -30,7 +34,7 @@ App.defaultProps = {
 			id: 1,
 			name: 'Whiskey',
 			age: 5,
-			src: './images/whiskey.jpg',
+			src: whiskey,
 			facts: [
 				'Whiskey loves eating popcorn.',
 				'Whiskey is a terrible guard dog.',
@@ -41,21 +45,21 @@ App.defaultProps = {
 			id: 2,
 			name: 'Duke',
 			age: 3,
-			src: './images/duke.jpg',
+			src: duke,
 			facts: [ 'Duke believes that ball is life.', 'Duke likes snow.', 'Duke enjoys pawing other dogs.' ]
 		},
 		{
 			id: 3,
 			name: 'Perry',
 			age: 4,
-			src: './images/perry.jpg',
+			src: perry,
 			facts: [ 'Perry loves all humans.', 'Perry demolishes all snacks.', 'Perry hates the rain.' ]
 		},
 		{
 			id: 4,
 			name: 'Tubby',
 			age: 4,
-			src: './images/tubby.jpg',
+			src: tubby,
 			facts: [
 				'Tubby is really stupid.',
 				'Tubby does not like walks.',
