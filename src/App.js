@@ -14,10 +14,10 @@ function App({ dogs }) {
 			<BrowserRouter>
 				<Nav names={names} />
 				<Switch>
-					<Route exact to="dogs/:dog">
+					<Route exact path="/dogs/:name">
 						<Dog dogs={dogs} />
 					</Route>
-					<Redirect to="/dogs" />
+					<Redirect exact to="/dogs" />
 				</Switch>
 			</BrowserRouter>
 		</div>

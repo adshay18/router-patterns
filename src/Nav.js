@@ -6,7 +6,7 @@ const Nav = ({ names }) => {
 		<nav>
 			<NavLink to="/dogs">Home</NavLink>
 			{names.map((name) => (
-				<NavLink key={uuid()} to={name}>
+				<NavLink key={uuid()} exact to={`/dogs/${name}`}>
 					{name}
 				</NavLink>
 			))}

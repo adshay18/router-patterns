@@ -1,8 +1,10 @@
-import { useParams } from 'react';
+import { useParams } from 'react-router-dom';
 
 const Dog = ({ dogs }) => {
-	const { name } = useParams();
-	console.log(name);
+	const params = useParams();
+	console.log(params);
+	let dog = dogs[0];
+	console.log(dog);
 };
 
 export default Dog;
