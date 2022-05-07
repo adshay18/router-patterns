@@ -17,7 +17,7 @@ function App({ dogs }) {
 					<Route exact path="/dogs/:name">
 						<Dog dogs={dogs} />
 					</Route>
-					<Redirect exact to="/dogs" />
+					<Redirect to="/dogs" />
 				</Switch>
 			</BrowserRouter>
 		</div>
@@ -27,6 +27,7 @@ function App({ dogs }) {
 App.defaultProps = {
 	dogs: [
 		{
+			id: 1,
 			name: 'Whiskey',
 			age: 5,
 			src: './images/whiskey.jpg',
@@ -37,18 +38,21 @@ App.defaultProps = {
 			]
 		},
 		{
+			id: 2,
 			name: 'Duke',
 			age: 3,
 			src: './images/duke.jpg',
 			facts: [ 'Duke believes that ball is life.', 'Duke likes snow.', 'Duke enjoys pawing other dogs.' ]
 		},
 		{
+			id: 3,
 			name: 'Perry',
 			age: 4,
 			src: './images/perry.jpg',
 			facts: [ 'Perry loves all humans.', 'Perry demolishes all snacks.', 'Perry hates the rain.' ]
 		},
 		{
+			id: 4,
 			name: 'Tubby',
 			age: 4,
 			src: './images/tubby.jpg',
